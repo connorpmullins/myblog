@@ -1,9 +1,11 @@
 /* textprojectstyle.css */
 body {
-	
+	background-image: url("imgur.com/a/wgZwH");
+	background-color: #66ccff
 }
 h1{
-	
+	text-align: center;
+	color:#660066;
 }
 p{
 	
