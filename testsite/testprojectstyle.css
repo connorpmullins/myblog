@@ -22,8 +22,26 @@ body {
 	box-shadow: 0px 0px 0px 8px rgba(0,0,0,0.3);  
 }
 
+.poembox {
+	position: absolute;
+}
 
+.poemtitle {
+	position: relative;
+	text-align: center;
+	font-size: 3vw;
+	text-decoration: underline; 
+}
 
+.essay {
+	position: absolute;
+}
+
+.subheading {
+	position: relative;
+	text-align: center;
+	font-size:2vw;
+}
 
 a:link, a:visited {
 	float: left;
