@@ -1,8 +1,33 @@
 /* textprojectstyle.css */
+
+/* Background design - goal is to have a bckgd that streches horizontally
+	to fill any screen length*/
 body {
 	background-image: url("http://i.imgur.com/8xTcNcI.jpg");
-	background-color: #66ccff
+	background-color: #66ccff;
+	background-repeat: no-repeat;
+	background-attachment: scroll;
 }
+
+/* Responsive design for mobile devices*/
+
+.menuitem {
+    width: 100%;
+    margin-bottom: 15px;
+}
+.menuitem:hover {
+	border-radius: 1px;
+	box-shadow: 0px 0px 0px 8px rgba(0,0,0,0.3);
+}
+.title{
+	text-align: center;
+	font-size: 3em;
+	color:#000000;
+}
+
+/*Design for all screens bigger than 768px*/
+
+@media only screen and (min-width: 768px) {
 .title{
 	text-align: center;
 	font-size: 4vw;
@@ -12,15 +37,19 @@ body {
 	text-align: center;
 }
 .menuitem {
-	display: inline-block;
+		display: inline-block;
 	font-size: small;
 	margin-right: 30px;
 	margin-top: 50px;
 }
+
 .menuitem:hover {
 	border-radius: 1px;
-	box-shadow: 0px 0px 0px 8px rgba(0,0,0,0.3);  
+	box-shadow: 0px 0px 0px 8px rgba(0,0,0,0.3);
 }
+}	
+
+/* Design elements that should remain the same regardless of screen size*/
 
 .poembox {
 	position: absolute;
@@ -43,6 +72,11 @@ body {
 	font-size:2vw;
 }
 
+
+
+/* CSS for a menu bar with pseudo-class interactions (not necessary right now)
+
+
 a:link, a:visited {
 	float: left;
 	text-decoration: none;
@@ -62,3 +96,4 @@ a:active {
 	background-color: yellow;
 	color: red;
 }
+*/
